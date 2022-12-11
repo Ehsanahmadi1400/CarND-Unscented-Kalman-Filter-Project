@@ -119,6 +119,9 @@ int main() {
           double p_y = ukf.x_(1);
           double v   = ukf.x_(2);
           double yaw = ukf.x_(3);
+          
+          std::cout << "this is px: " << p_x << std::endl;
+          std::cout << "this is py: " << p_y << std::endl;
 
           double v1 = cos(yaw)*v;
           double v2 = sin(yaw)*v;
